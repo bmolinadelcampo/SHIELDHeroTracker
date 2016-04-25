@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		97D985191CCE21430067F637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D985181CCE21430067F637 /* AppDelegate.swift */; };
-		97D9851B1CCE21430067F637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9851A1CCE21430067F637 /* ViewController.swift */; };
 		97D9851E1CCE21430067F637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9851C1CCE21430067F637 /* Main.storyboard */; };
 		97D985201CCE21430067F637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D9851F1CCE21430067F637 /* Assets.xcassets */; };
 		97D985231CCE21430067F637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D985211CCE21430067F637 /* LaunchScreen.storyboard */; };
+		97D9852B1CCE25C80067F637 /* HeroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9852A1CCE25C80067F637 /* HeroTableViewController.swift */; };
+		97D9852D1CCE260F0067F637 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9852C1CCE260F0067F637 /* HeroDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97D985151CCE21430067F637 /* SHIELDHeroTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHIELDHeroTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D985181CCE21430067F637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97D9851A1CCE21430067F637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97D9851D1CCE21430067F637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97D9851F1CCE21430067F637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97D985221CCE21430067F637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D985241CCE21430067F637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D9852A1CCE25C80067F637 /* HeroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewController.swift; path = ../HeroTableViewController.swift; sourceTree = "<group>"; };
+		97D9852C1CCE260F0067F637 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				97D985181CCE21430067F637 /* AppDelegate.swift */,
-				97D9851A1CCE21430067F637 /* ViewController.swift */,
+				97D9852A1CCE25C80067F637 /* HeroTableViewController.swift */,
+				97D9852C1CCE260F0067F637 /* HeroDetailViewController.swift */,
 				97D9851C1CCE21430067F637 /* Main.storyboard */,
 				97D9851F1CCE21430067F637 /* Assets.xcassets */,
 				97D985211CCE21430067F637 /* LaunchScreen.storyboard */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D9851B1CCE21430067F637 /* ViewController.swift in Sources */,
+				97D9852D1CCE260F0067F637 /* HeroDetailViewController.swift in Sources */,
 				97D985191CCE21430067F637 /* AppDelegate.swift in Sources */,
+				97D9852B1CCE25C80067F637 /* HeroTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
