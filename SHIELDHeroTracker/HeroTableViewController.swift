@@ -9,10 +9,15 @@
 import UIKit
 
 class HeroTableViewController: UITableViewController {
-
+    
+    var heroList: [Hero] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = "S.H.I.E.L.D Hero Tracker"
+        loadHeroes()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -92,4 +97,28 @@ class HeroTableViewController: UITableViewController {
     }
     */
 
+    func loadHeroes()
+    {
+        if let path = NSBundle.mainBundle().pathForResource("heroes", ofType: "json")
+        {
+            do
+            {
+                let data =  try! NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                print(data)
+                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? [[String: AnyObject]]
+                {
+                    for heroDictionary in jsonResult
+                    {
+                        let newHero = Hero(dictionary: heroDictionary)
+                        heroList.append(newHero)
+                    }
+                }
+            }
+            catch
+            {
+                print("va fallado a serialisasión")
+            }
+           
+        }
+    }
 }
