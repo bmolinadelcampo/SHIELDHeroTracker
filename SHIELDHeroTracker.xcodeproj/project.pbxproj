@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9743E5371CCF9C070086BDBE /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9743E5361CCF9C070086BDBE /* heroes.json */; };
 		97B925E31CCEA7CA00A45680 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B925E21CCEA7CA00A45680 /* Hero.swift */; };
 		97D985191CCE21430067F637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D985181CCE21430067F637 /* AppDelegate.swift */; };
 		97D9851E1CCE21430067F637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9851C1CCE21430067F637 /* Main.storyboard */; };
@@ -14,10 +15,10 @@
 		97D985231CCE21430067F637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D985211CCE21430067F637 /* LaunchScreen.storyboard */; };
 		97D9852D1CCE260F0067F637 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9852C1CCE260F0067F637 /* HeroDetailViewController.swift */; };
 		97D9852F1CCE28A00067F637 /* HeroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9852E1CCE28A00067F637 /* HeroTableViewController.swift */; };
-		97D985331CCE299F0067F637 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 97D985321CCE299F0067F637 /* heroes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9743E5361CCF9C070086BDBE /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
 		97B925E21CCEA7CA00A45680 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		97D985151CCE21430067F637 /* SHIELDHeroTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHIELDHeroTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D985181CCE21430067F637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		97D985241CCE21430067F637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97D9852C1CCE260F0067F637 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		97D9852E1CCE28A00067F637 /* HeroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTableViewController.swift; sourceTree = "<group>"; };
-		97D985321CCE299F0067F637 /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heroes.json; path = ../heroes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				97D9851F1CCE21430067F637 /* Assets.xcassets */,
 				97D985211CCE21430067F637 /* LaunchScreen.storyboard */,
 				97D985241CCE21430067F637 /* Info.plist */,
-				97D985321CCE299F0067F637 /* heroes.json */,
+				9743E5361CCF9C070086BDBE /* heroes.json */,
 			);
 			path = SHIELDHeroTracker;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D985231CCE21430067F637 /* LaunchScreen.storyboard in Resources */,
-				97D985331CCE299F0067F637 /* heroes.json in Resources */,
+				9743E5371CCF9C070086BDBE /* heroes.json in Resources */,
 				97D985201CCE21430067F637 /* Assets.xcassets in Resources */,
 				97D9851E1CCE21430067F637 /* Main.storyboard in Resources */,
 			);

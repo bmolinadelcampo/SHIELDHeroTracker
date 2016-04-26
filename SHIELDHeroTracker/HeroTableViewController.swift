@@ -117,7 +117,6 @@ class HeroTableViewController: UITableViewController {
             {
                 print("error")
             }
-           
         }
     }
 }
