@@ -116,7 +116,7 @@ class HeroTableViewController: UITableViewController {
             }
             catch
             {
-                print("va fallado a serialisasión")
+                print("error")
             }
            
         }

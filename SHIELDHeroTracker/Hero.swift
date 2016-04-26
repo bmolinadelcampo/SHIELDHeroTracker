@@ -30,5 +30,4 @@ class Hero {
             self.superpowers = superpowers
         }
     }
-
 }
