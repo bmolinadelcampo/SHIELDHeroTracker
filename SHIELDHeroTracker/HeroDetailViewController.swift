@@ -14,6 +14,7 @@ class HeroDetailViewController: UIViewController {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroHomeworldLabel: UILabel!
     @IBOutlet weak var heroSuperpowersLabel: UILabel!
+    @IBOutlet weak var heroImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,17 @@ class HeroDetailViewController: UIViewController {
         
         if let homeworld = hero.homeworld
         {
-            heroHomeworldLabel.text = homeworld
+            heroHomeworldLabel.text = "From: " + homeworld
         }
         
         if let superpowers = hero.superpowers
         {
             heroSuperpowersLabel.text = superpowers
+        }
+        
+        if let image = hero.image
+        {
+            heroImageView.image = image
         }
     }
 
