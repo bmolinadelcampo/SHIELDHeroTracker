@@ -80,6 +80,7 @@ class HeroTableViewController: UITableViewController {
     }
     */
 
+    // MARK: Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail"
@@ -92,7 +93,9 @@ class HeroTableViewController: UITableViewController {
             }
         }
     }
-
+    
+    // MARK: Private Methods
+    
     func loadHeroes()
     {
         if let path = NSBundle.mainBundle().pathForResource("heroes", ofType: "json")

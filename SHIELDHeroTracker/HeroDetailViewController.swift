@@ -17,9 +17,20 @@ class HeroDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(hero.name)
-
-        // Do any additional setup after loading the view.
+        if let name = hero.name
+        {
+            heroNameLabel.text = name
+        }
+        
+        if let homeworld = hero.homeworld
+        {
+            heroHomeworldLabel.text = homeworld
+        }
+        
+        if let superpowers = hero.superpowers
+        {
+            heroSuperpowersLabel.text = superpowers
+        }
     }
 
     override func didReceiveMemoryWarning() {

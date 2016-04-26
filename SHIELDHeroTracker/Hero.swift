@@ -25,7 +25,7 @@ class Hero {
             self.homeworld = homeworld
         }
         
-        if let superpowers = dictionary["superpowers"] as? String
+        if let superpowers = dictionary["powers"] as? String
         {
             self.superpowers = superpowers
         }
