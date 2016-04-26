@@ -25,32 +25,25 @@ class HeroTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return heroList.count
     }
 
-    /*
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("heroCell", forIndexPath: indexPath)
 
-        // Configure the cell...
-
+        let currentHero = heroList[indexPath.row]
+        cell.textLabel?.text = currentHero.name
+        cell.detailTextLabel?.text = currentHero.homeworld
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,15 +80,18 @@ class HeroTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail"
+        {
+            if let destinationViewController = segue.destinationViewController as? HeroDetailViewController
+            {
+                let selectedCell: UITableViewCell = sender as! UITableViewCell
+                let selectedHero = heroList[(tableView.indexPathForCell(selectedCell)?.row)!]
+                destinationViewController.hero = selectedHero
+            }
+        }
     }
-    */
 
     func loadHeroes()
     {

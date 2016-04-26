@@ -9,6 +9,7 @@
 import UIKit
 
 class HeroDetailViewController: UIViewController {
+    var hero: Hero!
     
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroHomeworldLabel: UILabel!
@@ -16,6 +17,7 @@ class HeroDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(hero.name)
 
         // Do any additional setup after loading the view.
     }

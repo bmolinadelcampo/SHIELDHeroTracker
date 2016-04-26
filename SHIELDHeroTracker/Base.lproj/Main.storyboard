@@ -57,7 +57,7 @@
         <!--Hero Detail View Controller-->
         <scene sceneID="811-Mi-24X">
             <objects>
-                <viewController id="pld-vY-fPX" customClass="HeroDetailViewController" sceneMemberID="viewController">
+                <viewController id="pld-vY-fPX" customClass="HeroDetailViewController" customModule="SHIELDHeroTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tsI-TJ-TFI"/>
                         <viewControllerLayoutGuide type="bottom" id="hDE-sR-Ruk"/>
